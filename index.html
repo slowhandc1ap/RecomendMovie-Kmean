@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images2.alphacoders.com/666/666957.jpg');
+            /* เปลี่ยนชื่อไฟล์รูปภาพตามที่คุณต้องการ */
+            background-size: cover;
+            /* ปรับขนาดรูปภาพให้เต็มพื้นที่ */
+            background-position: center;
+            /* จัดตำแหน่งให้รูปภาพอยู่ตรงกลาง */
+            background-repeat: no-repeat;
+            /* ไม่ให้รูปภาพทำซ้ำ */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            /* ตั้งสีข้อความเป็นขาว */
+        }
+
+        form {
+            background-color: #ffffff51;
+            padding: 50px;
+            padding-left: 30px;
+
+            border-radius: 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 16px;
+            /* กำหนดขนาดฟอนต์เป็น 16px */
+            font-weight: bold;
+            /* กำหนดให้ฟอนต์เป็นตัวหนา */
+        }
+
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            margin-right: 140px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/result" method="POST">
+        <label for="title">looking for good movie??</label><br>
+        <input type="text" id="title" name="title"><br><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
